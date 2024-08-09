@@ -1,0 +1,128 @@
+@import "variables.scss";
+
+.main__new-stuff {
+}
+.new-stuff {
+  padding: 120px 0 150px 0;
+  color: #fff;
+  &__container {
+    max-width: $container-width;
+    padding: 0 15px;
+    margin: auto;
+  }
+  &__title {
+    position: relative;
+    text-align: center;
+    line-height: 47.99px;
+    font-size: $title-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Playfair Display";
+    margin: 0 0 121px 0;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background-color: #fff;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -41px;
+    }
+  }
+}
+
+.new-stuff__items {
+  display: flex;
+  row-gap: 40px;
+  column-gap: 23px;
+  flex-wrap: wrap;
+  @media (max-width: $laptop) {
+    justify-content: center;
+  }
+}
+.new-stuff__item {
+}
+.item-new-stuff {
+  width: 260px;
+  height: 405px;
+  &__image-box {
+    width: 100%;
+    height: 325px;
+    background-color: #191b1c;
+    padding: 27px 22px 34px 23px;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      filter: blur(2px);
+    }
+    &_last {
+      position: relative;
+      button {
+        border: none;
+        background: transparent;
+        outline: none;
+        position: absolute;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        border: 1px solid #fff;
+        top: 49%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        padding: 11px 15px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 23.99px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 400;
+        font-family: "Playfair Display";
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: inherit;
+        filter: blur(90px);
+      }
+    }
+    img {
+      width: 215px;
+      height: 264px;
+      vertical-align: top;
+      object-fit: cover;
+    }
+    &_m {
+      padding: 0 22px 0 23px;
+
+      img {
+        height: 325px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: $subtitle-font-size;
+    line-height: 23.99px;
+    font-weight: 400;
+    margin: 22px 0 10px 0;
+    font-family: "Playfair Display";
+  }
+  &__price {
+    color: #d0d0d0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.33px;
+    font-family: "Playfair Display";
+  }
+}
+.item-new-stuff__image-box {
+}
+.item-new-stuff__title {
+}
+.item-new-stuff__price {
+}

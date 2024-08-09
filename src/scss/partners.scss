@@ -1,0 +1,53 @@
+@import "variables.scss";
+
+.main__partners {
+  background-color: #0f0f0f;
+  min-height: 453px;
+}
+.partners {
+  color: #fff;
+  &__title {
+    position: relative;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 47.99px;
+    font-size: $title-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Playfair Display";
+    margin: 0 0 122px 0;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background-color: #fff;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -48px;
+    }
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 10px;
+    @media (max-width: $laptop) {
+      padding: 0 10px 20px 10px;
+    }
+  }
+  &__item {
+    @media (max-width: $mobile-smallest) {
+      max-width: 320px;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.partner__item-image {
+}

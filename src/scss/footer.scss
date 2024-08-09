@@ -1,0 +1,182 @@
+@import "variables.scss";
+
+.footer {
+  color: #fff;
+  &__top {
+    height: 450px;
+    padding: 80px 0 0 0;
+    background-image: url("/images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    @media (max-width: $tablet) {
+      height: auto;
+      padding: 80px 0 20px 0;
+    }
+  }
+
+  &__container {
+    max-width: $container-width;
+    padding: 0 15px;
+    margin: auto;
+    display: flex;
+    column-gap: 88px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    &_bottom {
+      column-gap: 0;
+      justify-content: space-between;
+      height: 100%;
+      align-items: center;
+      @media (max-width: $tablet) {
+        flex-direction: row;
+        row-gap: 0;
+      }
+      @media (max-width: $mobileSmall) {
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+  }
+}
+
+.top-footer__left {
+  display: flex;
+  column-gap: 31px;
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+.about-company-footer {
+  max-width: 350px;
+  @media (max-width: $tablet) {
+    max-width: 50%;
+  }
+  @media (max-width: $mobile) {
+    max-width: 100%;
+  }
+  &__title {
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.99px;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+  }
+  &__description {
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+.categories-footer {
+  &__title {
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.99px;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 19px;
+  }
+  &__item {
+    background-color: #0f0f0f;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+  }
+}
+
+.contact-footer {
+  max-width: 350px;
+  @media (max-width: $tablet) {
+    max-width: 100%;
+  }
+  &__title {
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.99px;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+  }
+  &__description {
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  &__form {
+    margin: 26px 0 0 0;
+    display: flex;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+  &__input-name {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    width: 210px;
+    color: #fff;
+    background-color: #ffffff66;
+    &::placeholder {
+      color: #ffffff66;
+    }
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+  &__btn-submit {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 20px;
+    line-height: 21px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: #0f0f0f;
+    cursor: pointer;
+    @media (max-width: $tablet) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.footer__bottom {
+  height: 50px;
+  @media (max-width: $mobileSmall) {
+    height: auto;
+    padding: 10px 0;
+  }
+}
+.bottom-footer {
+  &__copyright,
+  &__user-agreement {
+    color: #d0d0d0;
+    line-height: 15.53px;
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 400;
+  }
+  &__user-agreement {
+    text-decoration: underline;
+  }
+}

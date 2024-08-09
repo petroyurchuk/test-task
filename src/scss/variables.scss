@@ -1,0 +1,24 @@
+$color-primary: #000000;
+$color-secondary: #0f0f0f;
+$font-header-color: #969696;
+$bg-hover-color: #1f1f1f;
+
+$font-family: "PT Sans";
+$font-size: 14px;
+$title-font-size: 36px;
+$subtitle-font-size: 18px;
+
+// widths
+
+$min-width: 320px;
+$max-width-container: 1110px;
+
+$total-container-padding: 30px;
+$container-width: $max-width-container + $total-container-padding;
+
+$pc: $container-width;
+$tablet: 1024px;
+$mobile: 767.98px;
+$mobileSmall: 479.98px;
+$mobile-smallest: 374.98px;
+$laptop: 1440px; // laptop L

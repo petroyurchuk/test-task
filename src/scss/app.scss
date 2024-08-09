@@ -1,0 +1,17 @@
+@import "normalize.css";
+@import "header.scss";
+@import "main.scss";
+@import "collections.scss";
+@import "new-stuff.scss";
+@import "articles.scss";
+@import "partners.scss";
+@import "footer.scss";
+@import "variables.scss";
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: $font-size;
+  font-family: $font-family;
+  background-color: $color-primary;
+}
